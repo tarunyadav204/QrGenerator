@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    font-size: larger;
+    background-color: #000000;
+}
+.col{
+    background-color: lightblue;
+}
+#main{
+   text-align: center;
+}
+
+.container{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0, 255, 234,0.6),pink,rgb(105, 105, 105));
+    box-shadow: 10px 10px 10px rgb(246, 175, 175);
+ 
+}
+#imgBox{
+    display: flex;
+    justify-content: center;
+   
+}
+
+#imgBox img{
+    
+}
+
+#qrtext input{
+    width: 100%;
+}
+.btn{
+    width: 100%;
+}
+
+
+#qrtext input:focus{
+ 
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    border: 5px solid white;
+
+}
+p{
+  
+    text-align: center;
+
+}
+#qrtext input {
+    text-align: center;
+    border-radius: 20%;
+}
+

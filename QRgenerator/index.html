@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="col justify-content-center" id="main">
+        <h1 class="mx-5">QR Code Generator</h1>
+        </div>
+    <div class="container">
+        <div class="row">
+              <p><b>Enter your website URL</b></p>
+              <div id="qrtext">
+               <input type="text" placeholder="Website URL" id="qrtex">
+              </div>
+              <div id="imgBox" class="mt-2">
+                <img src="" alt="" id="qrimg">
+              </div>
+              <div id="qrbtn" class="mt-2">
+                <button class="btn btn-primary mb-2" onclick="generateQR()">Generate QR Code</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let qrTEXT = document.getElementById("qrtex");
+        let qrIMAGE = document.getElementById("qrimg");
+
+        function generateQR(){
+              qrIMAGE.src =" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrTEXT.value;
+        }
+
+    </script>
+</body>
+</html>
